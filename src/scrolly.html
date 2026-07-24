@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.scss" />
+    <style>
+      
+      html{
+        max-width:100%;
+        
+      }
+      #scrolly {
+        position: relative;
+        padding: 0rem;
+      }
+
+      article {
+        position: relative;
+        padding: 0;
+        max-width: 100vw;
+        margin: 0 auto;
+      }
+
+      .sticky-thing {
+        position: -webkit-sticky;
+        position: sticky;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        z-index: 0;
+        top: 12.5vh;
+        margin-bottom:-10vh;
+        /* Center everything inside */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100vw;
+        max-height: 45vh;
+        width: auto;
+        margin: auto;
+      }
+
+      .sticky-thing p {
+        font-weight: 900;
+        color: #fff;
+      }
+
+      .step {
+        margin: 0 auto;
+        color: #000;
+        background: hsla(0,0%,100%,.9);
+        box-shadow:0 2px 5px 0 #e4e4e4;
+        margin-top:40vh;
+        margin-bottom:40vh;
+        max-width:40vw;
+      }
+
+      .step:first-child {
+        margin-top: 0vh;
+        margin-bottom: 10vh;
+      }
+
+      .step:last-child {
+        margin-bottom:40vh;
+      }
+
+      .step p {
+        text-align: center;
+        padding: 1rem;
+        font-family:  Georgia, serif;
+        font-size: 22px;
+      }
+      
+      #scrolly-background{
+        object-fit: cover;
+        width:100%;
+        height:130vh;
+            }
+      @media screen and (max-width: 800px) {
+        .step p{
+             font-size: 18px;
+        }
+        .step{
+          max-width:70%;
+          margin-top:30vh;
+          margin-bottom:30vh;
+        }
+    }     
+      
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <section id="scrolly">
+        <div class="sticky-thing">
+            <img id="scrolly-background" src="https://cloudfront-us-east-1.images.arcpublishing.com/spectator/6UIFTUCIZFBLXKXDITX4NPBO7M.JPEG">
+        </div>
+        <article>
+          <div class="step" data-step="1">
+            <p>As the 2024 presidential campaign ramped up, President Donald Trump stood before a crowd in the battleground state of Wisconsin, making a case for why voters ought to send him back to the White House for a second term.</p>
+          </div>
+          <div class="step" data-step="2">
+            <p>The demand, which would have stripped the department’s governance away from its faculty members and installed an external chair, was one of nine requirements for the University to begin talks to restore federal funding the White House <a href = "https://www.columbiaspectator.com/news/2025/03/07/trump-administration-cuts-400-million-in-federal-funding-to-columbia/">canceled</a> days earlier. But it was immediately <a href = "https://www.nytimes.com/2025/03/20/us/columbia-university-receivership-trump.html?eafs_enabled=false">recognized</a> as the most invasive. Though universities, including Columbia, had placed departments under receivership in the past, they had done so only of their own volition, as a last resort to address severe dysfunction.</p>
+          </div>
+          <div class="step" data-step="3">
+            <p>Sprinkled in between attacks on his Democratic opponent, then-President Joe Biden, for his handling of the economy, immigration, and crime, another issue unexpectedly center stage in Trump’s remarks: Columbia’s response to pro-Palestinian campus protests.</p>
+          </div>
+          <div class="step" data-step="4">
+            <p>With it, a playbook to scrutinize higher education began to materialize.</p>
+          </div>
+          <div class="step" data-step="5">
+            <iframe width="100%" height="50%" src="https://www.youtube.com/embed/epoiHztyB00?si=VxOnvU8fBiAvMGut&amp;start=967" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="step" data-step="6">
+            <p>The Wakeusha, Wisconsin, rally was held on May 1, 2024, hours after the New York Police Department <a href = "https://www.columbiaspectator.com/news/2024/04/30/nypd-sweeps-occupied-hamilton-hall-arrests-dozens/">swept</a> occupied Hamilton Hall and <a href = "https://www.columbiaspectator.com/city-news/2024/05/01/nypd-confirms-arrest-of-109-individuals-following-sweep-of-occupied-hamilton-hall-and-gaza-solidarity-encampment/">arrested</a> over 100 pro-Palestinian protesters the night of April 30, 2024. It was the climax of a wave of pro-Palestinian protests at college campuses across the country that had been sparked by Columbia’s “Gaza Solidarity Encampment” two weeks earlier on April 17, 2024.</p>
+          </div>
+          <div class="step" data-step="7">
+            <p>Later in the speech, Trump told the crowd, “To every college president I say: Remove the encampments immediately, vanquish the radicals, and take back our campuses for all of the normal students who want a safe place from which to learn,”</p>
+          </div>
+          <div class="step" data-step="8">
+            <p>For Trump, the <a href = "https://www.columbiaspectator.com/news/2024/04/30/dozens-occupy-hamilton-hall-as-pro-palestinian-protests-spread-across-campus/">events</a> that occurred approximately 900 miles away in Morningside Heights the night before stood out as another episode that underscored the need for an iron fist on all areas of American society—including universities.</p>
+          </div>
+          <div class="step" data-step="9">
+            <p>Nine months later, back in the Oval Office, Trump would act on that promise.</p>
+          </div>
+          <div class="step" data-step="10">
+            <p>And Columbia would be caught in the crosshairs.</p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- <div class='debug'></div> -->
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <script src="./scripts/scrolly.js"></script>
+     
+  </body>
+</html>
